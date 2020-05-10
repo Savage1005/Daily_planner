@@ -21,11 +21,6 @@ function getWeekDay(date){
     return weekdays[day];
 }
 
-function getMonth(date){
-    var Months = new Array ();
-}
-
-
 
 //this is to save into local storage
 saveButton.on("click", function() {
