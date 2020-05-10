@@ -1,6 +1,4 @@
 
-
-
 var dayOfTheWeek = document.getElementById("weekday")
 
 var date = new Date();
