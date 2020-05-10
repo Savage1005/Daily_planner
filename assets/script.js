@@ -38,21 +38,21 @@ saveButton.on("click", function() {
 
     
     //this is the loop to determine what color to make the textarea boxes in relation to the time
-    for (let i = 9; i < 24; i++) {
+    for (let i = 9; i < 18; i++) {
         var currentHourText = localStorage.getItem("hour"+i)
        if(currentHourText !== null){
             $("#text"+i).val(currentHourText)
         }
         console.log(currentHour)
-        
+        //past 
         if(currentHour>i){
             $("#text"+i).css("background-color", "gray");
         }
-        
+        //present
         else if (parseInt(currentHour)=== i){
             $("#text"+i).css("background-color", "red");
         }
-        
+        //future
         else {
             $("#text"+i).css("background-color", "green");
         }
