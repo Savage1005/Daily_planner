@@ -5,18 +5,27 @@ $( document ).ready(function() {
 var dayOfTheWeek = document.getElementById("weekday")
 
 var date = new Date();
+var currentDay= moment().format('MMMM DD YYYY, h:mm:ss a')
+//console.log(currentDay) --testing moment.js
 var weekDay = getWeekDay(date);
 var saveButton = $(".btn");
 var currentHour = new Date().getHours();
 var todayDate = Date(Date.now())
 
+document.getElementById("h3").innerHTML = currentDay
+
+//function that I wrote before I discovered how easy moment.js is. 
 function getWeekDay(date){
     var weekdays = new Array(
       "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
    );
     var day = date.getDay();
-    dayOfTheWeek.textContent ="Today is " + weekdays[day];
+    dayOfTheWeek.textContent ="Today is " + weekdays[day] + ",";
     return weekdays[day];
+}
+
+function getMonth(date){
+    var Months = new Array ();
 }
 
 

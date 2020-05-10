@@ -10,18 +10,23 @@
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
+    <!--Added link to Moment.js-->
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+
 </head>
 
 <body>
-    
-    <header>
+    <!--top of page-->
+    <header class="container bg-primary p-3 text-white">
      <div class="header text-center h1 p-4 mt-3"> Weekday Planner</div>
     <div id="weekday" class="text-center h3"></div>
+    <h3 id ="h3" class="text-center"></h3>
+    
     </header>
     <br><hr>
 
 
-    <main class="container">
+    <main class="container bg-light">
     <!---9am-->
     <div id="hour-9" class="row time-block">
         <div class="col-md-1 hour">
