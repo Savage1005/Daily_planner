@@ -1,10 +1,22 @@
 
 $( document ).ready(function() {
-    console.log( "ready!" );
-});
+    });
+
+var dayOfTheWeek = document.getElementById("weekday")
+
+var date = new Date();
+console.log(date)
+var weekDay = getWeekDay(date);
+
+function getWeekDay(date){
+    var weekdays = new Array(
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    );
+    var day = date.getDay();
+    dayOfTheWeek.textContent ="Today is " + weekdays[day];
+    return weekdays[day];
+}
 
 
-var currentDateAndTime = Date(Date.now());// exp: Fri Oct 25 2019 17:40:56 GMT-0400 (Eastern Daylight Time)
-var currentHour = new Date().getHours();//Current hour in military time
 
 
