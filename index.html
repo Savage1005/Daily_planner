@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weekday Planner</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!--Added  link to Moment.js-->
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+
+</head>
+
+<body>
+    <!--top of page-->
+    <header class="container bg-primary p-2 text-white">
+     <div class="header text-center h1 p-4 mt-1"> Weekday Planner</div>
+    <div id="weekday" class="text-center h3"></div>
+    <h3 id ="h3" class="text-center"></h3>
+    
+    </header>
+    <br><hr>
+
+
+    <main class="container bg-light">
+    <!---9am-->
+    <div id="hour-9" class="row time-block">
+        <div class="col-md-1 hour">
+          9 A.M.
+        </div>
+        <textarea class="col-md-10 description" id="text9">
+        </textarea>
+        <button class="btn saveBtn btn-primary col-md-1" value=9>Save<i class="fas fa-save"></i></button>
+    </div>
+    <br>
+      <!--10am-->
+      <div id="hour-10" class="row time-block">
+        <div class="col-md-1 hour">
+          10 A.M.
+        </div>
+        <textarea class="col-md-10 description" id="text10">
+        </textarea>
+        <button class="btn saveBtn btn-primary col-md-1" value=10>Save<i class="fas fa-save"></i></button>
+      </div>
+      <br>
+    <!--11 am-->
+    <div id="hour-11" class="row time-block">
+        <div class="col-md-1 hour">
+          11 A.M.
+        </div>
+        <textarea class="col-md-10 description" id="text11">
+        </textarea>
+        <button class="btn saveBtn btn-primary col-md-1" value=11>Save<i class="fas fa-save"></i></button>
+      </div>
+      <br>
+      <!--12am-->
+      <div id="hour-12" class="row time-block">
+        <div class="col-md-1 hour">
+          12 A.M.
+        </div>
+        <textarea class="col-md-10 description" id="text12">
+        </textarea>
+        <button class="btn saveBtn btn-primary col-md-1" value=12>Save<i class="fas fa-save"></i></button>
+      </div>
+      <br>
+      <!--1pm-->
+      <div id="hour-13" class="row time-block">
+        <div class="col-md-1 hour">
+          1 P.M.
+        </div>
+        <textarea class="col-md-10 description" id="text13">
+        </textarea>
+        <button class="btn saveBtn btn-primary col-md-1" value=13>Save<i class="fas fa-save"></i></button>
+      </div>
+      <br>
+      <!--2pm-->
+      <div id="hour-14" class="row time-block">
+        <div class="col-md-1 hour">
+          2 P.M.
+        </div>
+        <textarea class="col-md-10 description" id="text14">
+        </textarea>
+        <button class="btn saveBtn btn-primary col-md-1" value=14>Save<i class="fas fa-save"></i></button>
+      </div>
+      <br>
+     <!--3pm-->
+      <div id="hour-15" class="row time-block">
+        <div class="col-md-1 hour">
+          3 P.M.
+        </div>
+        <textarea class="col-md-10 description" id="text15">
+        </textarea>
+        <button class="btn saveBtn btn-primary col-md-1" value=15>Save<i class="fas fa-save"></i></button>
+      </div>
+      <br>
+     <!--4pm-->
+      <div id="hour-16" class="row time-block">
+        <div class="col-md-1 hour">
+          4 P.M.
+        </div>
+        <textarea class="col-md-10 description" id="text16">
+        </textarea>
+        <button class="btn saveBtn btn-primary col-md-1" value=16>Save<i class="fas fa-save"></i></button>
+      </div>
+      <br>
+     <!--5pm-->
+      <div id="hour-17" class="row time-block">
+        <div class="col-md-1 hour">
+          5 P.M.
+        </div>
+        <textarea class="col-md-10 description" id="text17">
+        </textarea>
+        <button class="btn saveBtn btn-primary col-md-1" value=17>Save<i class="fas fa-save"></i></button>
+      </div>
+      </main>
+
+      <script src="assets/script.js"></script>
+<br>
+      
+    </body>
+    
+    </html>
+
